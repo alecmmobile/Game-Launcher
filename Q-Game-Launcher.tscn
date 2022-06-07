@@ -1,0 +1,165 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/godot-sqlite/godot-sqlite.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Node" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Debug" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect4" type="ColorRect" parent="Debug"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 27.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 20, 20 )
+color = Color( 0.117647, 0.466667, 0.835294, 1 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -594.0
+
+[node name="Menu_VBox" type="VBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 423.0
+margin_bottom = 593.0
+
+[node name="Menu_Title_VBox" type="VBoxContainer" parent="PanelContainer/Menu_VBox"]
+margin_right = 416.0
+margin_bottom = 14.0
+
+[node name="Menu_Title_HBox" type="HBoxContainer" parent="PanelContainer/Menu_VBox/Menu_Title_VBox"]
+margin_right = 416.0
+margin_bottom = 14.0
+
+[node name="Accent" type="ColorRect" parent="PanelContainer/Menu_VBox/Menu_Title_VBox/Menu_Title_HBox"]
+margin_right = 10.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 10, 10 )
+color = Color( 0.117647, 0.466667, 0.835294, 1 )
+
+[node name="TItle" type="Label" parent="PanelContainer/Menu_VBox/Menu_Title_VBox/Menu_Title_HBox"]
+margin_left = 14.0
+margin_right = 416.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "SQLite Data-Base Manager GUI"
+
+[node name="Users_HBox" type="HBoxContainer" parent="PanelContainer/Menu_VBox"]
+margin_top = 18.0
+margin_right = 416.0
+margin_bottom = 100.0
+
+[node name="User" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_right = 66.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="User2" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_left = 70.0
+margin_right = 136.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User2"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User2"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="User3" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_left = 140.0
+margin_right = 206.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User3"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User3"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="User4" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_left = 210.0
+margin_right = 276.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User4"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User4"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="User5" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_left = 280.0
+margin_right = 346.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User5"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User5"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="User6" type="VBoxContainer" parent="PanelContainer/Menu_VBox/Users_HBox"]
+margin_left = 350.0
+margin_right = 416.0
+margin_bottom = 82.0
+
+[node name="Username_Avatar" type="TextureRect" parent="PanelContainer/Menu_VBox/Users_HBox/User6"]
+margin_right = 66.0
+margin_bottom = 64.0
+texture = ExtResource( 2 )
+
+[node name="Username_Label" type="Label" parent="PanelContainer/Menu_VBox/Users_HBox/User6"]
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 82.0
+text = "Username"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/Menu_VBox"]
+margin_top = 104.0
+margin_right = 416.0
+margin_bottom = 118.0
+
+[node name="Label" type="Label" parent="PanelContainer/Menu_VBox/VBoxContainer2"]
+margin_right = 416.0
+margin_bottom = 14.0
+text = "Texto de prueba."

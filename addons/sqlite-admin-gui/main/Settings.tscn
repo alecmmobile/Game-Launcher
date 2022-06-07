@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://app-settings/main-menu/icons/database_icon_white.svg" type="Texture" id=1]
+
+[node name="Settings" type="VBoxContainer"]
+margin_right = 506.0
+margin_bottom = 564.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Settings_Title_HBox" type="HBoxContainer" parent="."]
+margin_right = 506.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="Accent" type="ColorRect" parent="Settings_Title_HBox"]
+margin_right = 10.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 10, 10 )
+color = Color( 0.117647, 0.466667, 0.835294, 1 )
+
+[node name="Settings_TItle_Label" type="Label" parent="Settings_Title_HBox"]
+margin_left = 14.0
+margin_right = 212.0
+margin_bottom = 14.0
+size_flags_vertical = 1
+text = "SQLite Data-Base Manager GUI"
+
+[node name="Directory_Path_Label" type="Label" parent="."]
+margin_top = 18.0
+margin_right = 506.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Data-Base Directory"
+
+[node name="Directory_Path" type="HBoxContainer" parent="."]
+margin_top = 36.0
+margin_right = 506.0
+margin_bottom = 69.0
+
+[node name="LineEdit" type="LineEdit" parent="Directory_Path"]
+margin_right = 469.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 350, 33 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "res:\\\\project\\app-data\\"
+
+[node name="TextureButton" type="TextureButton" parent="Directory_Path"]
+margin_left = 473.0
+margin_right = 506.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 33, 33 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="Settings_Label" type="Label" parent="."]
+margin_top = 73.0
+margin_right = 506.0
+margin_bottom = 87.0
+text = "Settings"
+
+[node name="tree" type="Tree" parent="."]
+margin_top = 91.0
+margin_right = 506.0
+margin_bottom = 564.0
+rect_min_size = Vector2( 350, 350 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+hide_root = true
+select_mode = 1

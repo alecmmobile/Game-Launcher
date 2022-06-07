@@ -8,10 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "DataBaseManager",
+"language": "GDScript",
+"path": "res://app-settings/config/data-base.gd"
+} ]
+_global_script_class_icons={
+"DataBaseManager": "res://app-settings/main-menu/icons/database.svg"
+}
+
 [application]
 
 config/name="Q-Game-Launcher"
+run/main_scene="res://Q-Game-Launcher.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/sqlite-admin-gui/plugin.cfg", "res://addons/sqlite_admin_gui/plugin.cfg" )
 
 [physics]
 
