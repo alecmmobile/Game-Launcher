@@ -1,2 +1,2 @@
-# Q-Game-Launcher
+# Game-Launcher
 Game Launcher.
